@@ -9,16 +9,17 @@ while (true) {
   }
   
   if (answer === "Y") {
-    const firstNumber = Number(prompt("First question"));
-    const secondNumber = Number(prompt("Second question"));
-    const thirdNumber = Number(prompt("Third question"));
+    const firstNumber = Number(prompt("What is the first number?"));
+    const secondNumber = (prompt("Which operation do you want to do?");
+    const thirdNumber = Number(prompt("What is the second number?"));
     calculation = `${firstNumber} ${secondNumber} ${thirdNumber}`
+    console.log(`${calculation}`);
   } else {
     console.log("Your answer was unclear");
   }
 }
 
-console.log(`${calculation}`);
+console.log("Oke, bye.");
 
 // Checklist:
 // When started, it will ask you if you want to do a calculation. If you answer “Y” it will ask three questions:

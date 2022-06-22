@@ -5,15 +5,21 @@ let calculation = "";
 while (true) {
   const answer = prompt("Do you want to do a calculation? Y/N");
   if (answer === "N") {
-    break; 
+    break;
   }
-  
+
   if (answer === "Y") {
     const firstNumber = Number(prompt("What is the first number?"));
-    const secondNumber = (prompt("Which operation do you want to do?");
-    const thirdNumber = Number(prompt("What is the second number?"));
-    calculation = `${firstNumber} ${secondNumber} ${thirdNumber}`
-    console.log(`${calculation}`);
+    const operation = prompt("Which operation do you want to do? +, -, * or /");
+    const secondNumber = Number(prompt("What is the second number?"));
+
+    switch (operation) {
+      case "+":
+        calculation = firstNumber + secondNumber;
+        break;
+    }
+
+    console.log(`${firstNumber} ${operation} ${secondNumber} = ${calculation}`);
   } else {
     console.log("Your answer was unclear");
   }

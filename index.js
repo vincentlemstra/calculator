@@ -1,11 +1,31 @@
+'use strict';
+
+let calculation = "";
+
+while (true) {
+  const answer = prompt("Do you want to do a calculation? Y/N");
+  if (answer === "N") {
+    break; 
+  }
+  
+  if (answer === "Y") {
+    const firstNumber = Number(prompt("First question"));
+    const secondNumber = Number(prompt("Second question"));
+    const thirdNumber = Number(prompt("Third question"));
+    calculation = `${firstNumber} ${secondNumber} ${thirdNumber}`
+  } else {
+    console.log("Your answer was unclear");
+  }
+}
+
+console.log(`${calculation}`);
+
 // Checklist:
 // When started, it will ask you if you want to do a calculation. If you answer “Y” it will ask three questions:
 
-// What is the first number?
-
-// Which operation do you want to do?
-
-// What is the second number?
+// 1. What is the first number?
+// 2. Which operation do you want to do?
+// 3. What is the second number?
 
 // The calculator will then respond in this way: “5 + 7 = 12”.
 
